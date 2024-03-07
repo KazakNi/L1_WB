@@ -9,10 +9,10 @@ import "fmt"
 func main() {
 	arr1 := []string{"cat", "banana", "frog", "pipe"}
 	arr2 := []string{"bird", "ginger", "frog", "clone", "pipe"}
-
+	// генерируем множества
 	set1 := getMapSet(arr1)
 	set2 := getMapSet(arr2)
-
+	// ищем пересечение
 	resSet := intersectSets(set1, set2)
 	fmt.Println(resSet)
 
