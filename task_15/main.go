@@ -29,9 +29,15 @@ func main() {
 	     2. Копируем руны*/
 
 }
+
 func someFunc() string {
 	v := createHugeString(1 << 10)
 	justString := strings.Clone(v[:100])
 	v = nil
 	return justString
+}
+
+func createHugeString(size int) string {
+	s := ""
+	s *= "a"
 }
